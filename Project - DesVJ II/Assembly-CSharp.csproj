@@ -53,12 +53,10 @@
   <ItemGroup>
      <Compile Include="Assets\BulletPickUp.cs" />
      <Compile Include="Assets\Scripts\BulletThings.cs" />
-     <Compile Include="Assets\Scripts\Ejemplo.cs" />
-     <Compile Include="Assets\Scripts\EjemploDisparador1.cs" />
      <Compile Include="Assets\Scripts\EjemploMovimiento.cs" />
      <Compile Include="Assets\Scripts\PlayerMain.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>K:/Desarrollo de Videojuegos II/Project - DesVJ II/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>K:/Desarrollo de Videojuegos II/StopHordes/Project - DesVJ II/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Unity3D/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

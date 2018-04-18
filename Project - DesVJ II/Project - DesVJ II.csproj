@@ -324,11 +324,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Ejemplo.cs" />
-    <Compile Include="Assets\Scripts\EjemploDisparador1.cs" />
+    <Compile Include="Assets\Scripts\BulletPickUp.cs" />
+    <Compile Include="Assets\Scripts\BulletShooter.cs" />
+    <Compile Include="Assets\Scripts\BulletThings.cs" />
+    <Compile Include="Assets\Scripts\Damager.cs" />
     <Compile Include="Assets\Scripts\EjemploMovimiento.cs" />
-    <Compile Include="Assets\Scripts\EjemploMovimiento2.cs" />
-    <Compile Include="Assets\Scripts\EjemploMovimientoBala.cs" />
+    <Compile Include="Assets\Scripts\Health.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
