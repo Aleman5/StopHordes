@@ -51,10 +51,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BulletPickUp.cs" />
-     <Compile Include="Assets\Scripts\BulletThings.cs" />
-     <Compile Include="Assets\Scripts\EjemploMovimiento.cs" />
-     <Compile Include="Assets\Scripts\PlayerMain.cs" />
+     <Compile Include="Assets\Scripts\Autodestroy.cs" />
+     <Compile Include="Assets\Scripts\BulletMovement.cs" />
+     <Compile Include="Assets\Scripts\BulletPickUp.cs" />
+     <Compile Include="Assets\Scripts\BulletShooter.cs" />
+     <Compile Include="Assets\Scripts\Damager.cs" />
+     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+     <Compile Include="Assets\Scripts\EnemySpawn.cs" />
+     <Compile Include="Assets\Scripts\Health.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>K:/Desarrollo de Videojuegos II/StopHordes/Project - DesVJ II/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
