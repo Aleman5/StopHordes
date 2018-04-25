@@ -5,6 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] float mount;
+    [SerializeField] Camera camera;
 
     public float Mount
     {
@@ -14,6 +15,8 @@ public class Health : MonoBehaviour
             mount = value;
             if (mount <= 0)
             {
+                if(camera)
+                    camera.transform.SetParent(null);
                 mount = 0;
                 Destroy(gameObject);
             }

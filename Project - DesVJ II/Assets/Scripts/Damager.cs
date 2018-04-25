@@ -10,6 +10,5 @@ public class Damager : MonoBehaviour
     {
         var health = other.GetComponent<Health>();
         if (health) health.Mount -= damage;
-        Destroy(gameObject);
     }
 }

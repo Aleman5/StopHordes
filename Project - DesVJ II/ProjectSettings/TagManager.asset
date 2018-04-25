@@ -18,7 +18,7 @@ TagManager:
   - Bullet
   - PlayerTrigger
   - Enemy
-  - Terrain
+  - EnemySpawner
   - 
   - 
   - 

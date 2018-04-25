@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField] Transform player;
+    private Transform player;
+    public Transform Player
+    {
+        set{ player = value; }
+    }
 
     [SerializeField] float speed;
 
-    void Awake()
-    {
-        transform.LookAt(player);
-    }
-
 	void Update ()
     {
-        transform.LookAt(player);
-
-        transform.Translate(transform.forward * speed * Time.deltaTime);
+        if (player)
+        {
+            transform.LookAt(player);
+            transform.position += transform.forward * speed * Time.deltaTime;
+        }
     }
 }
