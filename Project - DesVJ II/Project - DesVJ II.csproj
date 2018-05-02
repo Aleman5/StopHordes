@@ -324,18 +324,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Autodestroy.cs" />
-    <Compile Include="Assets\Scripts\BulletMovement.cs" />
+    <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShakeInstance.cs" />
+    <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShakePresets.cs" />
+    <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShaker.cs" />
+    <Compile Include="Assets\EZ Camera Shake\Scripts\Utilities\CameraUtilities.cs" />
     <Compile Include="Assets\Scripts\BulletPickUp.cs" />
-    <Compile Include="Assets\Scripts\BulletShooter.cs" />
-    <Compile Include="Assets\Scripts\Damager.cs" />
-    <Compile Include="Assets\Scripts\EnemyMovement.cs" />
-    <Compile Include="Assets\Scripts\EnemySpawn.cs" />
-    <Compile Include="Assets\Scripts\Health.cs" />
-    <Compile Include="Assets\Scripts\ManagerGame.cs" />
-    <Compile Include="Assets\Scripts\ManagerLevel.cs" />
-    <Compile Include="Assets\Scripts\ManagerSpawner.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\ScrBullet\BulletDestroy.cs" />
+    <Compile Include="Assets\Scripts\ScrBullet\BulletMovement.cs" />
+    <Compile Include="Assets\Scripts\ScrEnemy\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\ScrEnemy\EnemySpawn.cs" />
+    <Compile Include="Assets\Scripts\ScrGenerals\Autodestroy.cs" />
+    <Compile Include="Assets\Scripts\ScrGenerals\Damager.cs" />
+    <Compile Include="Assets\Scripts\ScrGenerals\Health.cs" />
+    <Compile Include="Assets\Scripts\ScrManagers\ManagerGame.cs" />
+    <Compile Include="Assets\Scripts\ScrManagers\ManagerLevel.cs" />
+    <Compile Include="Assets\Scripts\ScrManagers\ManagerSpawner.cs" />
+    <Compile Include="Assets\Scripts\ScrPlayer\BulletShooter.cs" />
+    <Compile Include="Assets\Scripts\ScrPlayer\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\ScrUI\ChangeScene.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

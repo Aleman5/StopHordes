@@ -10,8 +10,10 @@ public class ManagerLevel : MonoBehaviour
     void Update()
     {
         if(ManagerSpawner.Instance.ActiveSpawners.Count <= 0)
-        {
-            SceneManager.LoadScene(nextScene);
-        }
+            Invoke("ChangeScene", 3);
+    }
+    void ChangeScene()
+    {
+        SceneManager.LoadScene(nextScene);
     }
 }

@@ -11,8 +11,14 @@ public class ManagerSpawner : MonoBehaviour
         get
         {
             if (instance == null)
+            {
                 instance = FindObjectOfType<ManagerSpawner>();
-
+                if (instance == null)
+                {
+                    var go = new GameObject("ManagerSpawner");
+                    instance = go.AddComponent<ManagerSpawner>();
+                }
+            }
             return instance;
         }
     }
