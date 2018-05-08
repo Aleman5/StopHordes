@@ -7,41 +7,53 @@ public class BulletShooter : MonoBehaviour
     [SerializeField] GameObject bala;
 
     [SerializeField] float timeBetweenShoot;
+    [SerializeField] float timeToReload;
 
-    [SerializeField] int balasRestantes;
+    [SerializeField] int maxBullets;
+    [SerializeField] int bulletsLeft;
 
     [SerializeField] AudioSource m_Shoot;
     [SerializeField] AudioSource m_NoMoreBullets;
-
-    public int BalasRestantes
-    {
-        get { return balasRestantes; }
-        set { balasRestantes = value; }
-    }
 
     void Awake()
     {
         m_Shoot = GetComponent<AudioSource>();
         m_NoMoreBullets = GetComponent<AudioSource>();
+        bulletsLeft = maxBullets;
     }
 
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            if (balasRestantes >= 1)
+            if (!IsInvoking())
             {
-                Disparar();
-                m_Shoot.Play();
+                if (bulletsLeft >= 1)
+                {
+                    Shoot();
+                    m_Shoot.Play();
+                }
+                else
+                {
+                    m_NoMoreBullets.Play();
+                    // a message telling "No more bullets, reload"
+                }
             }
-            else
-                m_NoMoreBullets.Play();
+        }
+        else if (Input.GetButtonDown("Reload"))
+        {
+            Invoke("Reloading", timeToReload);
         }
     }
 
-    void Disparar()
+    void Shoot()
     {
         Instantiate(bala, transform.position, transform.rotation);
-        balasRestantes--;
+        bulletsLeft--;
+    }
+
+    void Reloading()
+    {
+        bulletsLeft = maxBullets;
     }
 }

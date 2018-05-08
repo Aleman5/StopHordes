@@ -9,6 +9,7 @@ public class EnemySpawn : MonoBehaviour
 
     [SerializeField] float timeFirstSpawn;
     [SerializeField] float timeBtwSpawns;
+    [SerializeField] float dstFromOrigin;
 
     void OnEnable()
     {
@@ -29,8 +30,11 @@ public class EnemySpawn : MonoBehaviour
     {
         if (player)
         {
+            transform.LookAt(player.transform);
+
             var e = Instantiate(enemy);
             e.GetComponent<EnemyMovement>().Player = player.transform;
+            e.transform.position += transform.forward * dstFromOrigin;
         }
-	}
+    }
 }
