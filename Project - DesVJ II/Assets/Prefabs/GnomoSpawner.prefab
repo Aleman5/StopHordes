@@ -170,7 +170,7 @@ MonoBehaviour:
   player: {fileID: 1502522968154608, guid: c6b5c2b46d04e2e4f9eabaf59a3678fc, type: 2}
   timeFirstSpawn: 4
   timeBtwSpawns: 2
-  dstFromOrigin: 20
+  dstFromOrigin: 0.5
 --- !u!114 &114884956052793308
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -4,16 +4,25 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float movementSpeed;
+    Rigidbody rb;
+
+    [SerializeField] float movSpeed;
+    [SerializeField] float rotSpeed;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+        rb.maxAngularVelocity = float.MaxValue;
+    }
 
     private void Update ()
     {
-        float movWS = Input.GetAxis("Vertical") * movementSpeed * Time.deltaTime;
-        transform.Translate(0, 0, movWS);
+        Vector3 movement = Input.GetAxis("Vertical") * transform.forward * movSpeed
+                         + Input.GetAxis("Horizontal") * transform.right * movSpeed;
+        movement.y = rb.velocity.y; // Es para la gravedad
+        rb.velocity = movement;
 
-        float movAD = Input.GetAxis("Horizontal") * movementSpeed * Time.deltaTime;
-        transform.Translate(movAD, 0, 0);
-
-        
+        Vector3 rotation = new Vector3(0, Input.GetAxis("Mouse X") * rotSpeed, 0);
+        rb.angularVelocity = rotation;
     }
 }

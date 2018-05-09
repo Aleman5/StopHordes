@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BulletShooter : MonoBehaviour
 {
     [SerializeField] GameObject bala;
+
+    [SerializeField] AudioSource m_Shoot;
+    [SerializeField] AudioSource m_NoMoreBullets;
 
     [SerializeField] float timeBetweenShoot;
     [SerializeField] float timeToReload;
@@ -12,8 +16,22 @@ public class BulletShooter : MonoBehaviour
     [SerializeField] int maxBullets;
     [SerializeField] int bulletsLeft;
 
-    [SerializeField] AudioSource m_Shoot;
-    [SerializeField] AudioSource m_NoMoreBullets;
+    [SerializeField] UnityEvent onBulletsChanged;
+
+    public UnityEvent OnBulletsChanged
+    {
+        get { return onBulletsChanged; }
+    }
+
+    public int BulletsLeft
+    {
+        get { return bulletsLeft; }
+        private set
+        {
+            bulletsLeft = value;
+            OnBulletsChanged.Invoke();
+        }
+    }
 
     void Awake()
     {
@@ -28,7 +46,7 @@ public class BulletShooter : MonoBehaviour
         {
             if (!IsInvoking())
             {
-                if (bulletsLeft >= 1)
+                if (bulletsLeft > 0)
                 {
                     Shoot();
                     m_Shoot.Play();
@@ -49,11 +67,11 @@ public class BulletShooter : MonoBehaviour
     void Shoot()
     {
         Instantiate(bala, transform.position, transform.rotation);
-        bulletsLeft--;
+        BulletsLeft--;
     }
 
     void Reloading()
     {
-        bulletsLeft = maxBullets;
+        BulletsLeft = maxBullets;
     }
 }
