@@ -30,7 +30,8 @@ public class Health : MonoBehaviour
                     camera.transform.SetParent(null);
                     OnHealthChanged.Invoke();
                 }
-                Destroy(gameObject);
+                else
+                    Destroy(gameObject);
             }
             else if (camera)
             {

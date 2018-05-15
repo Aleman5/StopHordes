@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ManagerLevel : MonoBehaviour
 {
+
+
     [SerializeField] string nextScene;
 
     void Update()

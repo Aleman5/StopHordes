@@ -880,7 +880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1964306122126670, guid: 0f1985d979a909b418312817b6b45fcf, type: 2}
-  player: {fileID: 1502522968154608, guid: c6b5c2b46d04e2e4f9eabaf59a3678fc, type: 2}
+  player: {fileID: 1474390310028670, guid: c6b5c2b46d04e2e4f9eabaf59a3678fc, type: 2}
   timeFirstSpawn: 4
   timeBtwSpawns: 2
   dstFromOrigin: 0.5

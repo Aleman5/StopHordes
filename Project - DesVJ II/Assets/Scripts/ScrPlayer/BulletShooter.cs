@@ -8,7 +8,6 @@ public class BulletShooter : MonoBehaviour
     [SerializeField] GameObject bala;
 
     [SerializeField] AudioSource m_Shoot;
-    [SerializeField] AudioSource m_NoMoreBullets;
 
     [SerializeField] float timeBetweenShoot;
     [SerializeField] float timeToReload;
@@ -35,8 +34,8 @@ public class BulletShooter : MonoBehaviour
 
     void Awake()
     {
-        m_Shoot = GetComponent<AudioSource>();
-        m_NoMoreBullets = GetComponent<AudioSource>();
+        //m_Shoot = GetComponent<AudioSource>();
+        m_Shoot = m_Shoot.gameObject.GetComponent<AudioSource>();
         bulletsLeft = maxBullets;
     }
 
@@ -52,10 +51,7 @@ public class BulletShooter : MonoBehaviour
                     m_Shoot.Play();
                 }
                 else
-                {
-                    m_NoMoreBullets.Play();
-                    // a message telling "No more bullets, reload"
-                }
+                    Invoke("Reloading", timeToReload);
             }
         }
         else if (Input.GetButtonDown("Reload"))

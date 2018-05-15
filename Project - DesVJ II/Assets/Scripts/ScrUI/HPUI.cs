@@ -16,6 +16,6 @@ public class HPUI : MonoBehaviour
     }
     private void RefreshHealth()
     {
-        image.fillAmount = health.Mount;
+        image.fillAmount = health.Mount / 100;
     }
 }
