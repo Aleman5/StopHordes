@@ -69,14 +69,15 @@
      <Compile Include="Assets\Scripts\ScrGenerals\Autodestroy.cs" />
      <Compile Include="Assets\Scripts\ScrGenerals\Damager.cs" />
      <Compile Include="Assets\Scripts\ScrGenerals\Health.cs" />
-     <Compile Include="Assets\Scripts\ScrManagers\ManagerBullets.cs" />
      <Compile Include="Assets\Scripts\ScrManagers\ManagerGame.cs" />
      <Compile Include="Assets\Scripts\ScrManagers\ManagerLevel.cs" />
      <Compile Include="Assets\Scripts\ScrManagers\ManagerSpawner.cs" />
      <Compile Include="Assets\Scripts\ScrPlayer\BulletShooter.cs" />
      <Compile Include="Assets\Scripts\ScrPlayer\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\ScrUI\ActiveDisableUI.cs" />
      <Compile Include="Assets\Scripts\ScrUI\BulletsUI.cs" />
      <Compile Include="Assets\Scripts\ScrUI\ChangeScene.cs" />
+     <Compile Include="Assets\Scripts\ScrUI\HPUI.cs" />
      <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
      <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />

@@ -1,18 +1,41 @@
 fileFormatVersion: 2
-guid: b0716042a09e20c4aba5e80a9c7aedb8
-timeCreated: 1525784308
+guid: 0d80b10b60aa82946a307461311b9787
+timeCreated: 1526349756
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert1
+    2100000: eye
+    2100002: skin
+    2100004: clothes
+    2100006: hatMat
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Gnomo
+    4300000: gnomo
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: clothes
+    second: {fileID: 2100000, guid: 6171b042e1ce3524fb242ce8410a0d56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye
+    second: {fileID: 2100000, guid: e960aaf4ca4be044bb08c5cadaa4a3d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hatMat
+    second: {fileID: 2100000, guid: de0f044c92e7f4742a723d2169519b8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin
+    second: {fileID: 2100000, guid: 0efcef89e2590474bab187946bdcf71c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -42,7 +65,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 30
+    globalScale: 32
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
