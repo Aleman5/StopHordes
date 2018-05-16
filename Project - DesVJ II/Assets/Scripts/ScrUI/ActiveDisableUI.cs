@@ -7,8 +7,16 @@ public class ActiveDisableUI : MonoBehaviour
 {
     [SerializeField] Text text;
 
-	public void ChangeActive()
+    bool e;
+
+    void Start()
     {
-        text.enabled = !text.enabled;
+        text = GetComponent<Text>();
+        e = true;
+    }
+
+    public void ChangeActive()
+    {
+        text.gameObject.SetActive(!text.gameObject.activeSelf);
     }
 }

@@ -10,13 +10,16 @@ public class EnemySacrifice : MonoBehaviour
 
     [SerializeField] ParticleSystem particles;
 
+    void Start()
+    {
+        death = GetComponent<AudioSource>();
+    }
     void OnTriggerEnter(Collider col)
     {
         if (col.tag == "Player")
         {
             death.Play();
             ParticleSystem parti = Instantiate(particles, transform.position, transform.rotation);
-            //parti.Play();
             Destroy(gameObject);
         }
     }

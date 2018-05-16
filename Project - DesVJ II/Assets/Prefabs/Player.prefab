@@ -2298,6 +2298,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mount: 100
   camera: {fileID: 20373314355192946}
+  onHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114734662658585044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2315,6 +2320,11 @@ MonoBehaviour:
   timeToReload: 2.5
   maxBullets: 20
   bulletsLeft: 0
+  onBulletsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!124 &124432553047575944
 Behaviour:
   m_ObjectHideFlags: 1
@@ -2328,7 +2338,7 @@ CapsuleCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1474390310028670}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc3f5a3a70b78814187a05390979e7b9, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5

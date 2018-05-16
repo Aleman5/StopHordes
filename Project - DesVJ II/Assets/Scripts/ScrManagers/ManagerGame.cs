@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ManagerGame : MonoBehaviour {
+public class ManagerGame : MonoBehaviour
+{
+    [SerializeField] AudioSource backgroundMusic;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	void Start ()
+    {
+        backgroundMusic = backgroundMusic.GetComponent<AudioSource>();
+        backgroundMusic.Play();
+        Cursor.visible = false;
 	}
 }

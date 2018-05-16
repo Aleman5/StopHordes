@@ -8,7 +8,7 @@ public class ChangeScene : MonoBehaviour
 
     [SerializeField] string nextScene;
 
-    void OnClick()
+    public void StartGame()
     {
         SceneManager.LoadScene(nextScene);
     }

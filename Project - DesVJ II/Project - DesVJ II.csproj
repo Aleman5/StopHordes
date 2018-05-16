@@ -324,12 +324,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AS_ModernMenu1\README.cs" />
-    <Compile Include="Assets\AS_ModernMenu1\Scripts\CheckMusicVolume.cs" />
-    <Compile Include="Assets\AS_ModernMenu1\Scripts\CheckOptions.cs" />
-    <Compile Include="Assets\AS_ModernMenu1\Scripts\CheckSFXVolume.cs" />
-    <Compile Include="Assets\AS_ModernMenu1\Scripts\MainMenuNew.cs" />
-    <Compile Include="Assets\AS_ModernMenu1\Scripts\OptionsMenuNew.cs" />
     <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShakeInstance.cs" />
     <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShakePresets.cs" />
     <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShaker.cs" />
@@ -342,6 +336,7 @@
     <Compile Include="Assets\Scripts\ScrGenerals\Autodestroy.cs" />
     <Compile Include="Assets\Scripts\ScrGenerals\Damager.cs" />
     <Compile Include="Assets\Scripts\ScrGenerals\Health.cs" />
+    <Compile Include="Assets\Scripts\ScrManagers\ActiveCursor.cs" />
     <Compile Include="Assets\Scripts\ScrManagers\ManagerGame.cs" />
     <Compile Include="Assets\Scripts\ScrManagers\ManagerLevel.cs" />
     <Compile Include="Assets\Scripts\ScrManagers\ManagerSpawner.cs" />
@@ -350,12 +345,9 @@
     <Compile Include="Assets\Scripts\ScrUI\ActiveDisableUI.cs" />
     <Compile Include="Assets\Scripts\ScrUI\BulletsUI.cs" />
     <Compile Include="Assets\Scripts\ScrUI\ChangeScene.cs" />
+    <Compile Include="Assets\Scripts\ScrUI\ExitGame.cs" />
     <Compile Include="Assets\Scripts\ScrUI\HPUI.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
-    <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
-    <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+    <Compile Include="Assets\Scripts\ScrUI\SpawnersLeftUI.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
