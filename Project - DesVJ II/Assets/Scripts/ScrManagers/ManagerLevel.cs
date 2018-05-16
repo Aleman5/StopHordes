@@ -5,17 +5,36 @@ using UnityEngine;
 
 public class ManagerLevel : MonoBehaviour
 {
+    private static ManagerLevel instance;
 
-
-    [SerializeField] string nextScene;
-
-    void Update()
+    public static ManagerLevel Instance
     {
-        if(ManagerSpawner.Instance.ActiveSpawners.Count <= 0)
-            Invoke("ChangeScene", 3);
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<ManagerLevel>();
+                if (instance == null)
+                {
+                    var go = new GameObject("ManagerLevel");
+                    instance = go.AddComponent<ManagerLevel>();
+                }
+            }
+            return instance;
+        }
     }
-    void ChangeScene()
+
+    [SerializeField] Health health;
+
+    [SerializeField] string winScene;
+    [SerializeField] string loseScene;
+
+    public void WinScene()
     {
-        SceneManager.LoadScene(nextScene);
+        SceneManager.LoadScene(winScene);
+    }
+    public void LoseScene()
+    {
+        SceneManager.LoadScene(loseScene);
     }
 }

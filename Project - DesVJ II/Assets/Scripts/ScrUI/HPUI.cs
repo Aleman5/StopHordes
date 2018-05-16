@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HPUI : MonoBehaviour
 {
-    private Image image;
+    [SerializeField] Image image;
 
     [SerializeField] Health health;
 

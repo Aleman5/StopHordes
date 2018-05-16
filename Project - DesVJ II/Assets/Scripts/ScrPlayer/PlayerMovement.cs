@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
         movement.y = rb.velocity.y; // Es para la gravedad
         rb.velocity = movement;
 
-        Vector3 rotation = new Vector3(0, Input.GetAxis("Mouse X") * rotSpeed, 0);
+        Vector3 rotation = new Vector3 (0, Input.GetAxis("Mouse X") * rotSpeed, 0);
         rb.angularVelocity = rotation;
     }
 }

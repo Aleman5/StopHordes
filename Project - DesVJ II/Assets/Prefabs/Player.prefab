@@ -2298,11 +2298,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mount: 100
   camera: {fileID: 20373314355192946}
-  onHealthChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114734662658585044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2317,14 +2312,9 @@ MonoBehaviour:
   bala: {fileID: 1720352785142250, guid: efa4ee8e91252dd4b8edf9721bf97be3, type: 2}
   m_Shoot: {fileID: 82713474821458520}
   timeBetweenShoot: 1
-  timeToReload: 3
+  timeToReload: 2.5
   maxBullets: 20
   bulletsLeft: 0
-  onBulletsChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!124 &124432553047575944
 Behaviour:
   m_ObjectHideFlags: 1

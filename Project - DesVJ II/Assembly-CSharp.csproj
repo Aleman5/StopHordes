@@ -77,6 +77,7 @@
      <Compile Include="Assets\Scripts\ScrUI\ActiveDisableUI.cs" />
      <Compile Include="Assets\Scripts\ScrUI\BulletsUI.cs" />
      <Compile Include="Assets\Scripts\ScrUI\ChangeScene.cs" />
+     <Compile Include="Assets\Scripts\ScrUI\ExitGame.cs" />
      <Compile Include="Assets\Scripts\ScrUI\HPUI.cs" />
      <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />

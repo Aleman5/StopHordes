@@ -19,6 +19,8 @@ public class EnemySpawn : MonoBehaviour
     void OnDisable()
     {
         ManagerSpawner.Instance.ActiveSpawners.Remove(this);
+        if (ManagerSpawner.Instance.ActiveSpawners.Count <= 0)
+            ManagerLevel.Instance.WinScene();
     }
 
     void Awake()

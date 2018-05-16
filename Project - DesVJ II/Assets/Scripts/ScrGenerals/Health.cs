@@ -26,12 +26,8 @@ public class Health : MonoBehaviour
             {
                 mount = 0;
                 if (camera)
-                {
-                    camera.transform.SetParent(null);
-                    OnHealthChanged.Invoke();
-                }
-                else
-                    Destroy(gameObject);
+                    ManagerLevel.Instance.LoseScene();
+                Destroy(gameObject);
             }
             else if (camera)
             {

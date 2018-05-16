@@ -225,11 +225,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mount: 40
   camera: {fileID: 0}
-  onHealthChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114118883304709196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -267,3 +262,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1474390310028670, guid: c6b5c2b46d04e2e4f9eabaf59a3678fc, type: 2}
   death: {fileID: 82853539906754482}
+  particles: {fileID: 198946717037840990, guid: 9e839961dff785f429dc846e37ae2c73,
+    type: 2}

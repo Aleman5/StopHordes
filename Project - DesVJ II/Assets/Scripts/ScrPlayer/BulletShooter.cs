@@ -34,7 +34,6 @@ public class BulletShooter : MonoBehaviour
 
     void Awake()
     {
-        //m_Shoot = GetComponent<AudioSource>();
         m_Shoot = m_Shoot.gameObject.GetComponent<AudioSource>();
         bulletsLeft = maxBullets;
     }
