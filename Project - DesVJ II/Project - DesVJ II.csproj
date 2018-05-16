@@ -347,6 +347,7 @@
     <Compile Include="Assets\Scripts\ScrManagers\ManagerSpawner.cs" />
     <Compile Include="Assets\Scripts\ScrPlayer\BulletShooter.cs" />
     <Compile Include="Assets\Scripts\ScrPlayer\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\ScrUI\ActiveDisableUI.cs" />
     <Compile Include="Assets\Scripts\ScrUI\BulletsUI.cs" />
     <Compile Include="Assets\Scripts\ScrUI\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\ScrUI\HPUI.cs" />

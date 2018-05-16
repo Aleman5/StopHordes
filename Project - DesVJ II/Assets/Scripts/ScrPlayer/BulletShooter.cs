@@ -62,7 +62,8 @@ public class BulletShooter : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(bala, transform.position, transform.rotation);
+        Vector3 posY = transform.up;
+        Instantiate(bala, transform.position + posY, transform.rotation);
         BulletsLeft--;
     }
 

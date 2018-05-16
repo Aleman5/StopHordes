@@ -32,7 +32,7 @@ public class EnemySpawn : MonoBehaviour
         {
             transform.LookAt(player.transform);
 
-            var e = Instantiate(enemy);
+            var e = Instantiate(enemy, transform.position, transform.rotation);
             e.GetComponent<EnemyMovement>().Player = player.transform;
             e.transform.position += transform.forward * dstFromOrigin;
         }
