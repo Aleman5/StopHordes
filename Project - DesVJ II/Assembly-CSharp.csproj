@@ -51,12 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AS_ModernMenu1\README.cs" />
-     <Compile Include="Assets\AS_ModernMenu1\Scripts\CheckMusicVolume.cs" />
-     <Compile Include="Assets\AS_ModernMenu1\Scripts\CheckOptions.cs" />
-     <Compile Include="Assets\AS_ModernMenu1\Scripts\CheckSFXVolume.cs" />
-     <Compile Include="Assets\AS_ModernMenu1\Scripts\MainMenuNew.cs" />
-     <Compile Include="Assets\AS_ModernMenu1\Scripts\OptionsMenuNew.cs" />
      <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShakeInstance.cs" />
      <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShakePresets.cs" />
      <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShaker.cs" />
@@ -79,9 +73,6 @@
      <Compile Include="Assets\Scripts\ScrUI\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\ScrUI\ExitGame.cs" />
      <Compile Include="Assets\Scripts\ScrUI\HPUI.cs" />
-     <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
-     <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
-     <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>K:/Desarrollo de Videojuegos II/StopHordes/Project - DesVJ II/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
